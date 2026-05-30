@@ -1,14 +1,13 @@
 <?php
-// Configuración de la conexión a Railway de forma pública
-$conexion = mysqli_connect(
-    "zephyr.proxy.rlwy.net", 
-    "root", 
-    "RehvqWewbujbTGaROZZbZzNmpmZAuKCb", 
-    "railway", 
-    59736
-);
+$hostname = $_ENV['MYSQLHOST'];
+$username = $_ENV['MYSQLUSER'];
+$password = $_ENV['MYSQLPASSWORD'];
+$database = $_ENV['MYSQLDATABASE'];
+$port     = $_ENV['MYSQLPORT'];
+
+$conexion = mysqli_connect($hostname, $username, $password, $database, $port);
 
 if (!$conexion) {
-    die("Error de conexión a la base de datos: " . mysqli_connect_error());
+    die("Error de conexión: " . mysqli_connect_error());
 }
 ?>
