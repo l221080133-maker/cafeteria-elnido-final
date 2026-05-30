@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="input-group">
                 <input type="password" name="password" placeholder="Crea tu Contraseña" required>
             </div>
-            <button type="submit" name="registrar" class="btn-neon">REGISTRARME</button>
+            <button type="submit" name="registrar_nuevo" class="btn-neon">REGISTRARME</button>
         </form>
         <a href="login.php" class="link-back">¿Ya tienes cuenta? Inicia Sesión</a><br>
         <a href="index.php" class="link-back">← Volver a la Cafetería</a>
