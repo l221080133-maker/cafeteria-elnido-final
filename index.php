@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nombre'])) {
 
 <?php
     // Conexión opcional a la base de datos
-   $conexion = mysqli_connect("sql101.infinityfreeapp.com", "if0_42035482", "ZHf2Z6WM9BG", "if0_42035482_cafeteria");
+   // $conexion = mysqli_connect("sql101.infinityfreeapp.com", "if0_42035482", "ZHf2Z6WM9BG", "if0_42035482_cafeteria");
     // 🚀 JALAMOS LOS CAFÉS DEL ARSENAL DESDE LA BASE DE DATOS
   $consulta_catalogo = "SELECT * FROM productos";
   $resultado_catalogo = mysqli_query($conexion, $consulta_catalogo);
