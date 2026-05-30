@@ -13,8 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // 3. Consulta SQL corregida y completa en una sola línea
     // SIMULACIÓN DE REGISTRO EXITOSO PARA EVITAR EL ERROR DE LA MAESTRA
-    header("Location: login.php?registro=exitoso");
-    exit();
+    //header("Location: login.php?registro=exitoso");
+    //exit();
     
     if (mysqli_query($conexion, $query)) {
         // Si sale bien, nos manda directo al login
