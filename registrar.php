@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="login-box">
         <h2>Crear Cuenta</h2>
-        <form action="registrar.php" method="POST">
+        <form action="procesar_usuario.php" method="POST">
             <div class="input-group">
                 <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
             </div>
